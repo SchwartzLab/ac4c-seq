@@ -1,0 +1,12 @@
+sampleInfo			
+sample	sampleName	comp_treatment__mock	comp_treatment__deacetylation
+treatment_pileup.txt	treatment	1	1
+mock_pileup.txt	mock	-1	0
+deacetylation_pileup.txt	deacetylation	0	-1
+			
+parameters			
+	minWrong	3	3
+	pval	0.05	0.05
+	minDiff	0.02	0.02
+	maxContMis	0.05	1
+	glm	TRUE	FALSE
