@@ -451,6 +451,8 @@ plotMotifPie = ggplot(tbl1, aes(x="",y=Frequency, fill=Motif))+
   theme_classic()
 
 save(significantSites, plotHeatmap, plotSigSites, plotMotifPie, file=file.path(inDir,"ac4c_data_plots.Rdata"))
+write.table(significantSites, sep="\t", quote = F, row.names = F, file=file.path(inDir,"ac4c_significantSites.txt"))
+
 ```
 
 ## Including Plots
